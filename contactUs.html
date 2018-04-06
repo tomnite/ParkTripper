@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us </title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/PTfavicon.jpg" width="16" height="16">
+</head>
+
+<body>
+	<header id="masthead">
+<!--Class for custom background 3-->
+    <body class="contactpage"></body>
+
+
+	<div class="container">
+<!--Working site logo-->
+            <a href="Home.html" id="logo"><img src="images/WorkingLogoTemp.png" class="social" alt="ParkTripper Logo" width="35" height="35"></a>
+		<nav>
+<!--Site navigational links using bootstrap-->
+
+            <a href="Home.html">Find Parks Now</a>
+            <a href="About.html">About</a>
+
+	    </nav>
+	</div>
+    </header>
+
+
+	<div id="main-container" class="container">
+	    <section class="main-container">
+
+			<h1>Meet Our Team</h1>
+
+            <br>
+
+            <ul>  
+
+                <li>Lead Developer: Thomas Knight</li>
+                <li>Backend Programmer: Ryan Patrick</li>
+                <li>Frontend Programmer: Chris Williams</li>
+                <li>Creativity and Design: Tristan Brown</li>
+
+            </ul>
+            <br><br><br>
+
+            <h2>Contact ParkTripper</h2>
+
+            <h3>LET US KNOW WHO YOU ARE:</h3>
+
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name"> Your first and last name </label>
+						<input type="text" name="name" id="name" placeholder="Yogi Bear" required="required">
+					</li>
+					<li>
+						<label for="email">Your email address* </label>
+						<input type="text" name="email" id="email" placeholder="myemail@email.com" required="required">
+					</li>
+					<li>
+						<label for="message"> Message* </label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+                </ul>
+                <input type="submit" id="submit" name="submit">
+
+            </form>
+
+	    </section>
+    </div>
+	
+        <footer>
+<!--Social media links and copyright-->
+
+                <div id="connect">
+        
+                        <a href="https://www.facebook.com/"><img src="images/PTFBlogo.png" class="social" alt="Facebook Logo" width="25" height="25"></a>
+                        <a href="https://myspace.com/"><img src="images/PTMSlogo.png" class="social" alt="Myspace Logo" width="25" height="25"></a>
+                        <a href="https://www.linkedin.com/"><img src="images/PTLIlogo.png" class="social" alt="LinkedIn Logo" width="25" height="25"></a>
+                        
+                    </div>
+            
+        	<div class="container">
+
+        		&copy; 2018 ParkTripper
+        	</div>
+        </footer>
+
+
+
+</body>
+
+<!-- LINK TO FIREBASE GOES HERE -->
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<!-- firebase.js -->
+<script src="javascript/firebase.js"></script>
+</html>
