@@ -82,7 +82,7 @@ function runQuery(numParks, state) {
                     
                     var cityWeather = object.city;
                     var stateWeather = object.stateCode;
-                    var queryURLWeather = "http://api.wunderground.com/api/690cb48e9e905cb4";
+                    var queryURLWeather = "https://api.wunderground.com/api/690cb48e9e905cb4";
                     var searchTerm = cityWeather + "," + stateWeather;
                     queryURLWeather += "/forecast/q/" + searchTerm + ".json";
                     console.log(cityWeather);
