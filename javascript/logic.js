@@ -10,6 +10,12 @@ var images = "";
 var code = "";
 var fields = "";
 
+// Clear Button Function
+function clear() {
+    $('#wellSection').empty();
+    document.getElementById("search").value="";
+}
+
 // Search button functionality
 $("#searchBtn").on("click", function() {
     event.preventDefault();
@@ -21,8 +27,9 @@ $("#searchBtn").on("click", function() {
     runQuery(numResults, state);
 });
 
-// Variable to Track number of places
-var parkCounter = 0;
+$("#clearAll").on("click",function(event){
+    clear();
+});
 
 // Functions
 function runQuery(numParks, state) {
