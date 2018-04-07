@@ -4,104 +4,97 @@
 <head>
     <title> ParkTripper </title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="images/PTfavicon.jpg" width="16" height="16">
 </head>
 
 <body class="homepage">
     <div id="wrapper">
-    <header id="masthead">
-        <!--Class for custom background 1-->
-        <div class="container">
-            <a href="index.html" id="logo">
-                <img src="images/WorkingLogoTemp.png" class="social" alt="ParkTripper Logo" width="35" height="35">
-            </a>
-            <nav>
-                <a href="about.html">About</a>
-                <a href="contactUs.html">Contact</a>
-            </nav>
+        <header id="masthead">
+            <!--Class for custom background 1-->
+            <div class="container">
+                <a href="index.html" id="logo">
+                    <img src="images/WorkingLogoTemp.png" class="social" alt="ParkTripper Logo" width="35" height="35">
+                </a>
+                <nav>
+                    <a href="about.html">About</a>
+                    <a href="contactUs.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main-container" class="container">
+            <section class="main-container">
+
+                <h1>ParkTripper</h1>
+
+                <div class="row">
+                    <!-- Search Parameters Panel  -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Find a park...</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="search">Search State:</label>
+                                        <input type="text" class="form-control" id="search">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sel1">Number of parks:</label>
+                                        <select class="form-control" id="numParks">
+                                            <option value=1>1</option>
+                                            <option value=5 selected>5</option>
+                                            <option value=10>10</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+                                    <button type="button" class="btn btn-primary" id="clearAll">Clear</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Results Panel -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Search Results</h3>
+                            </div>
+                            <div class="panel-body" id="wellSection">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
-
-
-    <div id="main-container" class="container">
-        <section class="main-container">
-
-            <h1>ParkTripper</h1>
-
-            <div class="row">
-                <!-- Search Parameters Panel  -->
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Find a park...</h3>
-                        </div>
-                        <div class="panel-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="search">Search State:</label>
-                                    <input type="text" class="form-control" id="search">
-                                </div>
-                                <div class="form-group">
-                                    <label for="sel1">Number of parks:</label>
-                                    <select class="form-control" id="numParks">
-                                        <option value=1>1</option>
-                                        <option value=5 selected>5</option>
-                                        <option value=10>10</option>
-                                    </select>
-                                </div>
-    
-                                <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
-                                <button type="button" class="btn btn-primary" id="clearAll">Clear</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <footer>
+            <!--Social media links and copyright-->
+            <div id="connect">
+                <a href="https://www.facebook.com/">
+                    <img src="images/PTFBlogo.png" class="social" alt="Facebook Logo" width="25" height="25">
+                </a>
+                <a href="https://myspace.com/">
+                    <img src="images/PTMSlogo.png" class="social" alt="Myspace Logo" width="25" height="25">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/PTLIlogo.png" class="social" alt="LinkedIn Logo" width="25" height="25">
+                </a>
+                <p id="lastp">&copy; 2018 ParkTripper</p>
             </div>
-    
-            <div class="row">
-                <!-- Results Panel -->
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Search Results</h3>
-                        </div>
-                        <div class="panel-body" id="wellSection">
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Here's a low energy work around while I remember how to keep my footer stuck on the bottom-->
-            
-
-        </section>
+        </footer>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <!-- logic.js -->
+        <script src="javascript/logic.js"></script>
     </div>
-
-    <footer>
-        <!--Social media links and copyright-->
-        <div id="connect">
-            <a href="https://www.facebook.com/">
-                <img src="images/PTFBlogo.png" class="social" alt="Facebook Logo" width="25" height="25">
-            </a>
-            <a href="https://myspace.com/">
-                <img src="images/PTMSlogo.png" class="social" alt="Myspace Logo" width="25" height="25">
-            </a>
-            <a href="https://www.linkedin.com/">
-                <img src="images/PTLIlogo.png" class="social" alt="LinkedIn Logo" width="25" height="25">
-            </a>
-            <p id="lastp" >&copy; 2018 ParkTripper</p>
-
-        </div>
-
-        
-    </footer>
-<!-- jQuery cdn -->
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<!-- logic.js -->
-<script src="javascript/logic.js"></script>
-</div>
 </body>
 
 </html>
