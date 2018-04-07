@@ -80,9 +80,7 @@ function runQuery(numParks, state) {
                 $("#parkWell-" + i).append(
                     "<a href='" + data.data[i].url + "'>Park Website:  " + data.data[i].url + "</a>"
                 );
-                $("#parkWell-" + i).append(
-                    "<h3>Park Weather Forecast:</h3>"
-                );
+                
                 (function weather() {
                     var object = item; // the reference to the object
                     // self-invoking functions need to explicitly return something...
@@ -95,8 +93,7 @@ function runQuery(numParks, state) {
                     console.log(cityWeather);
                     console.log(queryURLWeather);
                     
-                    //return function() {
-                        
+                                           
                         $.ajax({
                           url: queryURLWeather,
                           method: "GET"
@@ -104,21 +101,24 @@ function runQuery(numParks, state) {
                           // append weather info to each item
                           console.log(object.i);
                             $("#parkWell-" + object.i).append(
-                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[0].title + "</h5>");
+                            "<h3>Park Weather Forecast:</h3>"
+                            );
                             $("#parkWell-" + object.i).append(
-                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[0].fcttext + "</p>");
+                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[0].title + "</p>");
                             $("#parkWell-" + object.i).append(
-                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[1].title + "</h5>");
+                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[0].fcttext + "</h5>");
                             $("#parkWell-" + object.i).append(
-                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[1].fcttext + "</p>");
+                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[1].title + "</p>");
                             $("#parkWell-" + object.i).append(
-                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[2].title + "</h5>");
+                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[1].fcttext + "</h5>");
                             $("#parkWell-" + object.i).append(
-                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[2].fcttext + "</p>");
+                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[2].title + "</p>");
                             $("#parkWell-" + object.i).append(
-                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[3].title + "</h5>");
+                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[2].fcttext + "</h5>");
                             $("#parkWell-" + object.i).append(
-                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[3].fcttext + "</p>");
+                            "<p>" + wundergroundData.forecast.txt_forecast.forecastday[3].title + "</p>");
+                            $("#parkWell-" + object.i).append(
+                            "<h5>" + wundergroundData.forecast.txt_forecast.forecastday[3].fcttext + "</h5>");
                         console.log(wundergroundData);
                         console.log(wundergroundData.forecast.txt_forecast.forecastday[0].title);
                         console.log(wundergroundData.forecast.txt_forecast.forecastday[0].fcttext);
