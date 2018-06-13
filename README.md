@@ -7,18 +7,18 @@
  ### Website visuals
  ## Home Page
 <img src="/images/HomePage.png" alt="HomePage">
-<img src="Database.png" alt="Customer">
+
 
 ## About Page
 <img src="/images/Aboutpage.png" alt="AboutPage">
 
 ## Contact Page
 <img src="/images/Contactpage1.png" alt="ContactPage">
-<img src="/images/Contactpage2.png" alt="ContactPage">
+<img src="/images/contactpage2.png" alt="ContactPage">
 
 ## Search Results Page
 <img src="/images/Searchresults.png" alt="SearchResults">
-<
+
 
 
 ### Contributors
