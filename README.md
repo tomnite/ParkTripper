@@ -27,8 +27,9 @@
 - Thomas Knight: Lead, Javascript/JQuery, API Integration
 
 ### Languages Used
-- Utlized jQuery
+- jQuery
 - Javascript
+- Ajax
 - HTML
 - CSS
 - Weather API
