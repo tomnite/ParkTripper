@@ -34,7 +34,7 @@ $("#clearAll").on("click", function(event) {
 // Functions
 function runQuery(numParks, state) {
   var queryURLBase =
-    "https://developer.nps.gov/api/v1/parks?stateCode=" +
+    "https://developer.nps.gov/api/v1/parks?states=" +
     state +
     "&fields=images,addresses&api_key=afINGn9zfWUna73PflSQlrH2T9LUuA2dAiUDkTeb";
   //AJAX Function
@@ -73,6 +73,7 @@ function runQuery(numParks, state) {
           "<img class='urlToImage' src='" + data.data[i].images[0].url + "'>"
         );
         $("#parkWell-" + i).append("<h3>" + data.data[i].fullName + "</h3>");
+        console.log(data.data[i].fullName)
         $("#parkWell-" + i).append("<p>" + data.data[i].description + "</p>");
         $("#parkWell-" + i).append(
           "<a href='" +
